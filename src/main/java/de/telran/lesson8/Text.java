@@ -1,4 +1,4 @@
-package de.telran.lesson4;
+package de.telran.lesson8;
 
 public class Text {
         public static void main(String[] args) {

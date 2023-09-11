@@ -1,4 +1,6 @@
-package de.telran.lesson4;
+package de.telran.lesson8;
+
+     import de.telran.lesson8.Calculator;
 
      import java.util.Scanner;
 public class CalculatorDemo {
