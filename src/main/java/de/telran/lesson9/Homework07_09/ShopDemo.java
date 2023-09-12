@@ -8,7 +8,7 @@ public class ShopDemo {
         System.out.println("Могу я идти в магазин -  " + myShop.canBuy(false, true));
     }
 }
- /*Создайте две переменные isEdekaOpen и isReweOpen,
+ /*Создайте две  переменные isEdekaOpen и isReweOpen,
   значения которых зависят от того, открыты магазины
   или нет (значения задайте сами). Реализуйте логический
   метод canBuy, возвращающий true / false Значение этой
