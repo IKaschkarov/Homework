@@ -8,15 +8,15 @@ public class Task1 {
 
         boolean canWalk;
 
-        if (isWeekend && isRain) {
+        if (isWeekend && !isRain) {
             canWalk = true;
-            System.out.println(" I can walk ");
+
 
         } else {
             canWalk = false;
-            System.out.println(" Сиди дома ");
-        }
 
+        }
+        System.out.println(" Можно гулять? " + canWalk);
     }
 
 
