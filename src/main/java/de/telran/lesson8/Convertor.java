@@ -17,6 +17,6 @@ public class Convertor {
     }
 
     public static double converter(double inputEuro) {
-        return inputEuro / 1.12;
+        return inputEuro / 1.10;
     }
 }
