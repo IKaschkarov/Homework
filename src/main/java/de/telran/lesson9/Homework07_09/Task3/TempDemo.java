@@ -1,10 +1,17 @@
 package de.telran.lesson9.Homework07_09.Task3;
 
+import java.util.Scanner;
+
 public class TempDemo {
     public static void main(String[] args) {
 
-        double Temperature1 = 105.0;
-        double Temperature2 = 101.6;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите показания температуры первой колбы : ");
+        double Temperature1 = scanner.nextDouble();
+
+        System.out.println("Введите показания температуры второй колбы : ");
+        double Temperature2 = scanner.nextDouble();
 
         boolean checkT = CheckTemp.Check(Temperature1, Temperature2);
 
