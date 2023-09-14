@@ -8,11 +8,11 @@ public class Convertor {
         System.out.println("Введите сумму в евро : ");
         double inputEuro = scanner.nextDouble();
 
-        double usdAmount = converter(inputEuro); // отправляем на конвертацию
-        String cutUsdAmount = String.format("%.2f", usdAmount); // округляем значение до двух цифр после запятой
+        double usd = converter(inputEuro);
+        String cutUsd = String.format("%.2f", usd);
 
 
-        System.out.println("Cумма в долларах США: " + cutUsdAmount); //печатаем результат
+        System.out.println("Cумма в долларах США: " + cutUsd);
 
     }
 
