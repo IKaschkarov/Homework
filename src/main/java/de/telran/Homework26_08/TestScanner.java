@@ -11,7 +11,7 @@ public class TestScanner {
        int mySum = myInt + 10;
         System.out.println("Результат сложения " + mySum);
 
-        System.out.print("Введите дробное число: ");
+        System.out.print(" Введите дробное число: ");
         double myDouble = scanner.nextDouble();
         System.out.println("Результат вычитания " + (myDouble-10));
 
