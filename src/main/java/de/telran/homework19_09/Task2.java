@@ -23,13 +23,15 @@ public class Task2 {
             System.out.println("Массив не является строго возрастающей последовательностью");
         }
     }
-    public static boolean checkIncreasing(int[] array1){
-        for (int i = 0; i < array1.length-1; i++) {
-            if (array1[i] < array1[i + 1]) {
-                return false ;
+
+    public static boolean checkIncreasing(int[] array1) {
+        for (int i = 1; i < array1.length; i++) {
+            if (array1[i - 1] > array1[i]) {
+                return false;
             }
 
-        } return true;
+        }
+        return true;
     }
 }
 
