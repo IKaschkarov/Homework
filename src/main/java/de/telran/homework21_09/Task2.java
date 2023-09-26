@@ -9,9 +9,8 @@ import java.util.Scanner;
  Если пользователь ввёл не подходящее число, то программа должна просить пользователя повторить ввод.
  Создать массив из n случайных целых чисел из отрезка [0;n] и вывести его на экран.
  Создать второй массив только из чётных элементов первого массива, если они там есть, и вывести его на экран.
-
-
 */
+
 public class Task2 {
     public static void main(String[] args) {
 
@@ -39,7 +38,7 @@ public class Task2 {
         int[] newArray = new int[counter];
 
         for (int i = 0; i < (myArray.length -1); i++) {
-            if (i % 2 == 0) {
+            if (i % 2 != 0) {
               newArray[i] = myArray[i];
               counter++;
 
