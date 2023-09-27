@@ -16,9 +16,19 @@ public class Task3 {
     int[] intArray = new int[12];
 
         for (int i = 0; i < intArray.length; i++) {
-            intArray[i] = - 15 - random.nextInt(15);
+            intArray[i] = random.nextInt(31) - 15;
         }
 
         System.out.println("Был сформирован массив " + Arrays.toString(intArray));
+
+        int max = findMax(intArray);
+
+        System.out.println("Максимальный элемент в массиве: " + max);
+    }
+
+    public static int findMax(int[] intArray){
+        for (int i = 0; i < intArray.length; i++){
+
+        }
     }
 }
