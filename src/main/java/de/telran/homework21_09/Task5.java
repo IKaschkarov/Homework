@@ -24,7 +24,7 @@ public class Task5 {
 
         double average1 = calculateAverage(array1);
 
-        System.out.println(average1);
+        System.out.println("Среднее арифметическое " + average1);
 
         for (int i = 0; i < array2.length; i++) {
             array2[i] = random.nextInt(6);
@@ -33,7 +33,7 @@ public class Task5 {
 
         double average2 = calculateAverage(array2);
 
-        System.out.println(average2);
+        System.out.println("Среднее арифметическое " + average2);
 
         if (average1 > average2) {
             System.out.println(" Среднее арифметическое массива №1 больше, чем среднее арифметическое массива №2");
@@ -41,7 +41,7 @@ public class Task5 {
         if (average1 < average2) {
             System.out.println(" Среднее арифметическое массива №2 больше, чем среднее арифметическое массива №1");
         }
-        else {
+        if (average1 == average2) {
             System.out.println(" Среднее арифметическое массива №1 равно среднему арифметическому массива №2");
         }
 
