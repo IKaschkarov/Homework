@@ -17,9 +17,9 @@ public class Task6 {
         System.out.println("Количество слов в тексте: " + wordCount);
     }
 
-    private static int countWords(String input) {
+    private static int countWords(String userInput) {
 
-        String[] words = input.split("\\s+");
+        String[] words = userInput.split("\\s+");
         return words.length;
     }
 }
