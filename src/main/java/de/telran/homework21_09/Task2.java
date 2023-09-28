@@ -21,29 +21,48 @@ public class Task2 {
         System.out.println("Введите размер массива (он должен быть больше числа 3): ");
 
         int arraySize = scanner.nextInt();
+
+
+        while (checkArraySize(arraySize)) {
+            System.out.println("Попробуйте еще раз ввести размер массива :");
+            arraySize = scanner.nextInt();
+        }
         int[] myArray = new int[arraySize];
 
-        if (arraySize <= 3) {
-            System.out.println("Попробуйте еще раз ввести размер массива :");
-
-        }
         for (int i = 0; i < myArray.length; i++) {
-            myArray[i] = random.nextInt(arraySize);
+            myArray[i] = random.nextInt(arraySize + 1);
         }
 
         System.out.println("По вашему запросу был сформирован массив из " + arraySize + " элементов" + Arrays.toString(myArray));
 
         int counter = 0;
 
-        int[] newArray = new int[counter];
+        for (int i = 0; i < myArray.length; i++) { // вычисление размера массива с четными числами
+            if (myArray[i] % 2 == 0) {
+                counter++;
+            }
 
-        for (int i = 0; i < (myArray.length -1); i++) {
-            if (i % 2 != 0) {
-              newArray[i] = myArray[i];
-              counter++;
+        }
+
+        int[] newArray = new int[counter];//с известным размером нового массива
+        int index = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] % 2 == 0) {
+                newArray[index] = myArray[i];
+                index++;
 
             }
-            System.out.println("Исходный массив не содержит четных чисел");
+            //System.out.println("Исходный массив не содержит четных чисел");
         }
+        System.out.println("Исходный массив только из четных чисел :" + Arrays.toString(newArray));
+    }
+
+    public static boolean checkArraySize(int arraySize) {
+        boolean check = false;
+        if (arraySize <= 3) {
+            check = true;
+
+        }
+        return check;
     }
 }
