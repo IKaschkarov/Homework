@@ -27,8 +27,14 @@ public class Task3 {
     }
 
     public static int findMax(int[] intArray){
-        for (int i = 0; i < intArray.length; i++){
 
+        int max = intArray[0];
+
+        for (int i = 0; i < intArray.length; i++){
+            if (intArray[i] > max) {
+                max = intArray[i];
+            }
         }
+        return max;
     }
 }
